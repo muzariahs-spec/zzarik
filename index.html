@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Siswa Ekstrakurikuler Pramuka</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>🏕️ Data Siswa Ekstrakurikuler Pramuka</h1>
+</header>
+
+<section class="form-section">
+    <h2>Tambah Siswa</h2>
+    <input type="text" id="nama" placeholder="Nama Siswa">
+    <input type="text" id="kelas" placeholder="Kelas">
+    <input type="text" id="jabatan" placeholder="Jabatan (Anggota, Ketua, dll)">
+    <button onclick="tambahSiswa()">Tambah</button>
+</section>
+
+<section class="table-section">
+    <h2>Daftar Siswa Pramuka</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jabatan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
